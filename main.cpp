@@ -22,6 +22,8 @@ const char* message = {"hello"};  //initializing pointer to char to string liter
 //conclusion: if we want to not allow modification on our string, use const char*
 
 char message1[] = {"hello"};
+char name[] = {"John"};
+print_hello(name);
 message1[1] = 'p';    //this is ok
 
 //each pointer is same size, doesn't matter which variable type is pointing on
