@@ -4,6 +4,11 @@ void print_hello(char* name){
     std::cout << "Hello " << name << std::endl;
 }
 
+int pointers_diff(int* first, int* second){
+    return first - second;
+}
+
+
 int main(){
 
 int* ptr1 = {};  //this pointer is initialized to null pointer, doesn't point at anything (int* ptr1 = {nullptr}) -> this is equal
