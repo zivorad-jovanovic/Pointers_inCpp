@@ -5,6 +5,7 @@ int main(){
 int* ptr1 = {};  //this pointer is initialized to null pointer, doesn't point at anything (int* ptr1 = {nullptr}) -> this is equal
 double* ptr2 = {};  //pointer to double, can store only double variable address -> this pointer is not pointing at anything
 int* point1, point2;  //in this case, point1 is pointer to integer but point2 is integer type, do this in separate lines !!!
+float* point4 = nullptr;
 int value = 23, value2 = 30;
 double value3 = 32.65; 
 char cr = 'A';
