@@ -4,7 +4,7 @@ void print_hello(char* name){
     std::cout << "Hello " << name << std::endl;
 }
 
-int pointers_diff(int* first, int* second){
+int pointers_diff(int* first, int* second){  //only when pointers are used to point to array elements
     return first - second;
 }
 
@@ -24,6 +24,11 @@ double value3 = 32.65;
 char cr = 'A';
 char* pointch = &cr;
 const char* message = {"hello"};  //initializing pointer to char to string literal !! in this case, we shouldn't modify this string
+int array[] = {1,2,3,4,5,6};
+int* p1 = array;
+int* p2 = array + 4;
+int result = pointers_diff(p2, p1);
+std::cout << "POINTERS DIFFERENCEE: " << result << std:: endl;
 //message[1] = 'r';    //this is compiler error
 //if we want to change string, we need to define it as array as shown below
 //*message = 'e';  compiler error
