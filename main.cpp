@@ -24,11 +24,13 @@ double value3 = 32.65;
 char cr = 'A';
 char* pointch = &cr;
 const char* message = {"hello"};  //initializing pointer to char to string literal !! in this case, we shouldn't modify this string
+
 int array[] = {1,2,3,4,5,6};
 int* p1 = array;
 int* p2 = array + 4;
 int result = pointers_diff(p2, p1);
 std::cout << "POINTERS DIFFERENCEE: " << result << std:: endl;
+
 //message[1] = 'r';    //this is compiler error
 //if we want to change string, we need to define it as array as shown below
 //*message = 'e';  compiler error
@@ -39,6 +41,10 @@ char message1[] = {"hello"};
 char name[] = {"John"};
 print_hello(name);
 message1[1] = 'p';    //this is ok
+
+int pointer_size = 0;
+pointer_size = sizeof_ptr(point1);
+std::cout << "Pointer size using sizeof_ptr function: " << pointer_size << std::endl;
 
 //each pointer is same size, doesn't matter which variable type is pointing on
 
