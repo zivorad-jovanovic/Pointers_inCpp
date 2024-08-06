@@ -8,6 +8,10 @@ int pointers_diff(int* first, int* second){
     return first - second;
 }
 
+int sizeof_ptr(int* ptr){
+    return sizeof(ptr);
+}
+
 
 int main(){
 
