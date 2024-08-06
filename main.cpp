@@ -24,6 +24,7 @@ double value3 = 32.65;
 char cr = 'A';
 char* pointch = &cr;
 const char* message = {"hello"};  //initializing pointer to char to string literal !! in this case, we shouldn't modify this string
+int pointer_size = 0;
 //message[1] = 'r';    //this is compiler error
 //if we want to change string, we need to define it as array as shown below
 //*message = 'e';  compiler error
@@ -32,6 +33,8 @@ const char* message = {"hello"};  //initializing pointer to char to string liter
 
 char message1[] = {"hello"};
 message1[1] = 'p';    //this is ok
+pointer_size = sizeof_ptr(point1);
+std::cout << "Pointer size using sizeof_ptr function: " << pointer_size << std::endl;
 
 //each pointer is same size, doesn't matter which variable type is pointing on
 
