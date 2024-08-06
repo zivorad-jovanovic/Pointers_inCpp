@@ -1,4 +1,5 @@
 #include <iostream>
+//MORAO SAM DA SE VRATIM NA SAM POCETAK PROJEKTA, I DA UBACIM OVAJ KOMENTAR
 
 void print_hello(char* name){
     std::cout << "Hello " << name << std::endl;
